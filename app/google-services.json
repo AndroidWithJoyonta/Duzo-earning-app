@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "986732769495",
+    "project_id": "duzo-earn-bitcoin",
+    "storage_bucket": "duzo-earn-bitcoin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986732769495:android:0d80948deeecd7d261c092",
+        "android_client_info": {
+          "package_name": "com.mining.duzo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986732769495-sal744k9t4pcb4mq2mf2hb2itaehkjqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mining.duzo",
+            "certificate_hash": "b9c53e7ce7fef2ac24966e031977701b0b018e30"
+          }
+        },
+        {
+          "client_id": "986732769495-jgvr38ntf5v6eued91ca0ufilqq0flqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy6l_4HesQNzqB5qQ4hjL1fQAbjPe1IpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986732769495-jgvr38ntf5v6eued91ca0ufilqq0flqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

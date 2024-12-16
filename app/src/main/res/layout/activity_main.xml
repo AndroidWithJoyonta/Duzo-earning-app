@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+  >
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+
+            >
+            <ImageView
+                android:id="@+id/wallet_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/wallet"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/balanceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text=" ₹0.00"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textSize="22dp"
+                android:layout_gravity="center"
+                 />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="?attr/actionBarSize"
+        />
+
+
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:buttonGravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        tools:ignore="BottomAppBar">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation"
+            app:itemTextColor="@color/black"
+            app:itemIconTint="@drawable/item_selector"
+            app:labelVisibilityMode="labeled"
+            android:background="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@color/white"
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Duzo</string>
+    <string name="default_web_client_id">986732769495-sal744k9t4pcb4mq2mf2hb2itaehkjqv.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rate_us">rate us</string>
+    <string name="privacy_policy">privacy policy</string>
+    <string name="share">share</string>
+    <string name="spin_and_earn">Spin And Earn</string>
+    <string name="scratch_and_earn">Scratch And Earn</string>
+    <string name="watch_and_earn">Watch And Earn</string>
+    <string name="refer_earn"><![CDATA[Refer & Earn]]></string>
+
+</resources>

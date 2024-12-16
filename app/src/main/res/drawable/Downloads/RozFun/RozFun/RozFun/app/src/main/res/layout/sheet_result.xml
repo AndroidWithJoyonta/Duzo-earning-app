@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
+    <View
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/sad"/>
+    <TextView
+        android:id="@+id/title"
+        android:shadowColor="@color/black"
+        android:shadowDy="5"
+        android:shadowDx="5"
+        android:shadowRadius="2"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Wow! You Won\nReward Claimed Successfully"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button"
+        app:cardCornerRadius="30dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="15dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/got_it"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

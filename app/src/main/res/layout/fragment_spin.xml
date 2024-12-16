@@ -1,0 +1,160 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/spin_and_earn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/sky"
+            app:cardCornerRadius="16dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/spinIcon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/spin_wheel"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spin_and_earn"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/spinIcon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scratch_and_earn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/spin_and_earn"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/scratchIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/scratch"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scratch_and_earn"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/scratchIcon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/watch_and_earn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/scratch_and_earn"
+        android:backgroundTint="@color/dark_blue"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/watchIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/earnings"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/watch_and_earn"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/watchIcon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/watch_and_earn"
+        android:layout_margin="10dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

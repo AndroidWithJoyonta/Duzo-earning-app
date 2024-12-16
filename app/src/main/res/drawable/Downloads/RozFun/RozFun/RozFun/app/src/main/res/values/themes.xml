@@ -1,0 +1,13 @@
+<resources>
+    <style name="Base.Theme.RozFun" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="fontFamily">@font/medium</item>
+    </style>
+    <style name="Theme.RozFun" parent="Base.Theme.RozFun" />
+    <style name="CustomSheet" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomSheetStyle</item>
+    </style>
+    <style name="CustomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>
